@@ -4,4 +4,6 @@ from . import views
 urlpatterns = [
     path('', views.index),
     path('<int:content_id>/', views.detail, name='detail'),
+    path('comment/create/<int:content_id>/', views.comment_create, name='comment_create'),
+
 ]
